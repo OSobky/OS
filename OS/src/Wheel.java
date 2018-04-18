@@ -11,13 +11,13 @@ public class Wheel extends Thread{
 		this.waiting_time = waiting_time;
 	}
 	public String getID (){
-		String ID = null ;
+		String IDS = null ;
 		for (int i =0; i< onboard_players.size();i++){
 		int id = onboard_players.get(i).ID;
-		 ID = ID+id+" ";
+		 IDS = IDS+id+" ";
 		
 	}
-	return ID;	
+	return IDS;	
 	}
 	public void load_players (Player player){
 		onboard_players.add(player);
