@@ -1,11 +1,10 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.LinkedList;
 import java.util.Queue;
 
 public class Operator {
 	static Wheel wheel ;
-	static Queue<Player> Players ;
+	Queue<Player> Player ;
 	
 	public static void main(String[] args) {
 		 String fileName = "temp.txt";
@@ -35,21 +34,10 @@ public class Operator {
 	                fileName + "'");                
 	        }
 	        
-	       
+	        
 	        String lines[] = line.split("\\r?\\n");
-	        int max_waitTime = Integer.parseInt(lines[0]) ;
-	        int QueuezSize = Integer.parseInt(lines[1]) ;
-	        Players = new LinkedList<Player>() ;
-	        for(int i = 2 ; i<QueuezSize ; i ++ ){
-	        	String lines2[] = lines[i].split(",");
-	        	
- 	        	int ID = Integer.parseInt(lines2[0]) ;
- 	        	int waiting_time = Integer.parseInt(lines2[1]) ;
-	        	Player p = new Player(ID, waiting_time);
-	        	Players.add(p);
-	        	
-	        }
-	        wheel = new Wheel(max_waitTime) ;
+	        
+	        wheel = new Wheel() ;
 		
 		
 		

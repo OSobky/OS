@@ -1,5 +1,5 @@
 
-
+<<<<<<< HEAD
 
 public class Player extends Thread   {
 	 int ID  ;
@@ -22,4 +22,9 @@ public class Player extends Thread   {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	 }}
+	 }
+=======
+public class Player {
+	
+>>>>>>> 369f38fb86a0273c17ac9019377624d8b300041c
+}
