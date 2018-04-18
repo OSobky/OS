@@ -8,7 +8,7 @@ public class Operator {
 	static Queue<Player> Players ;
 	
 	public static void main(String[] args) {
-		 String fileName = "input-1.txt";
+		 String fileName = "temp.txt";
 
 	        // This will reference one line at a time
 	        String line = null;
